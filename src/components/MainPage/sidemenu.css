@@ -1,0 +1,78 @@
+.menuLogo{
+    width: 30px;
+    margin-right: 20px;
+    
+}
+.dropdown-menu{
+    background-color: #03123B;
+}
+.sideMenu{
+    margin-top: 20px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding-left: 15px;
+    background-color: #03123B;
+}
+li{
+    text-decoration: none;
+    background-color: #03123B;
+    width: 100%;
+}
+
+.MenuTitle{
+    display: flex;
+    align-items: center;
+}
+
+.button{
+    text-decoration: none;
+    background-color: #03123B;
+    width: 100%;
+    text-align: start;
+    height: 50px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: none;
+    font-weight: 600;
+    color: aliceblue;
+    display: flex;
+}
+
+li:hover{
+background-color: #cc1980;
+}
+button:hover{
+    background-color: #cc1980;
+}
+
+button:visited{
+    background-color: #cc1980;
+}
+.smallScreen{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .sideMenu{
+        width: 100%;
+    }
+    li:hover{
+        background-color: #cc1980;
+        }
+        button:hover{
+            background-color: #cc1980;
+        } 
+        button:visited{
+            background-color: #cc1980;
+        }
+        .fullscreen{
+            display: none;
+        }
+        .smallScreen{
+            display: block;
+            background-color: #03123B;
+            color: aliceblue;
+        }
+
+}

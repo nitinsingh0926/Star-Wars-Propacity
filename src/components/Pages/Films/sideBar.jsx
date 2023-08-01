@@ -1,6 +1,6 @@
 import './sidebar.css'
 export default function SideBar({title,opening_crawl,director,release_date,producer,arrayIndex}){
-    return (
+  return (
         <>
         <div
         className="offcanvas offcanvas-end"

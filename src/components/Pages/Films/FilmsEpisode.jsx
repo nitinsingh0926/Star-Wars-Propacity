@@ -4,9 +4,13 @@ import axios from "../../MainPage/axiosApi";
 import { useState } from "react";
 import "./episodegrid.css";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
 function FilmsEpisode() {
   const [Films, setFilms] = useState([]);
   const [isError, setIsError] = useState("");
+  const navigate = useNavigate();
+
   const getFilmsApiData = async () => {
     try {
       const res = await axios.get("/films/");
@@ -15,13 +19,22 @@ function FilmsEpisode() {
       setIsError(err.message);
     }
   };
+
+  const handleNavigate = (val) => {
+    if(val == "grid"){
+      navigate("/films")
+    }else{
+      navigate("/listEpisodes")
+    }
+  }
+
   useEffect(() => {
     getFilmsApiData();
   }, []);
 
   return (
     <>
-      <Navbar name={"Films"} link={"/films"} link1={"/listEpisodes"} />
+      <Navbar name={"Films"} handleNavigate={handleNavigate} />
       {isError !== "" && <h2>{isError}</h2>}
       <div className="film-grid">
         {Films[0] ? ( //Loading animation for api

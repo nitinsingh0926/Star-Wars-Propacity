@@ -3,10 +3,13 @@ import { useEffect, useState } from "react";
 import axios from "../../MainPage/axiosApi";
 import Instance from "./instance";
 // import '../common.css'
+import { useNavigate } from "react-router-dom";
 
 function StarshipList() {
   const [myData, setData] = useState([]);
   const [isError, setIsError] = useState("");
+  const navigate = useNavigate();
+
   const getApiData = async () => {
     try {
       const res = await axios.get("/starships/");
@@ -16,14 +19,22 @@ function StarshipList() {
     }
   };
 
+  const handleNavigate = (val) => {
+    if(val == "grid"){
+      navigate("/starships")
+    }else{
+      navigate("/StarshipList")
+    }
+  }
+
   useEffect(() => {
     getApiData();
   }, []);
 
   return (
     <>
-    {isError ? "Error In Api Call" : ""}
-      <Navbar name={"Starships"} link={"/starships"} link1={"/StarshipList"} />
+    {isError ? console.log("Error In Api Call") : ""}
+    <Navbar name={"Starships"} handleNavigate={handleNavigate} />
       {myData[0] ? 
             "" //Loading animation for api
            : 

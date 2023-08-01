@@ -14,13 +14,11 @@
   .card > img{
     border-radius: 10px;
   }
-.card-body{
+#MovieDetails {
     margin-top: 4px;
     border-radius: 10px;
     display: flex;
     background-color: #354063;
-    
-    /* justify-content: space-between; */
 }
 .flex-item-left {
     padding: 10px;
@@ -45,7 +43,7 @@
     color: black;
     border-radius: 20px;
     background-color: 1px solid #333e61;
-    border-radius: 4px solid green;
+    border-radius: 4px solid gray;
 }
 .list{
     max-width: 120rem;
@@ -57,9 +55,9 @@
 
 .tableHeading{
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
-    background-color:#6699ff;
+    background-color: #354063;
     margin: 10px;
     padding-left: 2px;
     border-top-right-radius: 10px;
@@ -68,11 +66,15 @@
 .tableHeading > span{
     display: flex;
     margin-right: 30px;
+    margin-left: 10px;
     width:10%;
 }
 .h2{ 
     font-size: medium; 
- 
+    margin-left: 10px;
+}
+#movieName{
+  width: 100px;
 }
 .listCard{
     display: flex;

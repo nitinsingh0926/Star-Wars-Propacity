@@ -15,6 +15,7 @@ function GridEpisode({ Films }) {
       "https://picsum.photos/90/50",
     ];
   }
+
   const [title,setTitle] = useState([{
     "titleName" : "",
     "opening_crawl" : "",
@@ -22,10 +23,12 @@ function GridEpisode({ Films }) {
     "producer" : "",
     "release_date" : ""
   }]);
+
+
   return (
     <>
       {Films.map((item, index) => {
-        const { title,opening_crawl,director,producer,release_date} = item;
+        const { title,opening_crawl,director,producer,release_date } = item;
         return (
           <div className="gird" key={crypto.randomUUID()}>
             <div className="card">
@@ -39,7 +42,7 @@ function GridEpisode({ Films }) {
                 onClick={()=> setTitle([{"titleName" : title ,"opening_crawl" : opening_crawl, "director" : director, "producer" :  producer, "release_date" : release_date}])}
               />
 
-              <div className="card-body">
+              <div className="card-body" id="MovieDetails">
                 <div className="flex-item-left">
                   <img src={movie} id="movieIcon" />
                 </div>

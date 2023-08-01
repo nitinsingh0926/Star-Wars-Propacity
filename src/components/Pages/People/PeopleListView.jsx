@@ -2,11 +2,21 @@ import Navbar from "../navbar";
 import { useEffect, useState } from "react";
 import axios from "../../MainPage/axiosApi";
 import Instance from "./instance";
-// import '../common.css'
+import { useNavigate } from "react-router-dom";
 
 function PeopleList() {
   const [myData, setData] = useState([]);
   const [isError, setIsError] = useState("");
+  const navigate = useNavigate();
+const handleNavigate = (val) => {
+  if(val == "grid"){
+    navigate("/people")
+  }else{
+    navigate("/PeopleListView")
+  }
+}
+
+
   const getApiData = async () => {
     try {
       const res = await axios.get("/people/");
@@ -22,7 +32,8 @@ function PeopleList() {
 
   return (
     <>
-      <Navbar name={"People"} link={"/people"} link1={"/PeopleListView"} />
+    {isError ? console.log("Error In Api Call") : ""}
+      <Navbar name={"People"} handleNavigate={handleNavigate} />
       {myData[0] ? 
             "" //Loading animation for api
            : 

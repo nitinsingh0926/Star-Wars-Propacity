@@ -28,10 +28,8 @@ function AppRoutes() {
         <Route path="/species" element={<Species />}></Route>
         <Route path="/SpeciesList" element={<SpeciesList />}></Route>
         <Route path="/vehicles" element={<Vehicles />}></Route>
-       <Route path="/VehiclesList" element={<VehiclesList />}></Route>
+        <Route path="/VehiclesList" element={<VehiclesList />}></Route>
         <Route path="/PeopleListView" element={<PeopleList />}></Route>
-        
-        
       </Routes>
     );
   }

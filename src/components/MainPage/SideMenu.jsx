@@ -5,7 +5,7 @@ function SideMenu({Films,People,Planets,Species,StarShips,Vehicles,isError}) {
 
   return (
     <div className='sideMenu'>
-      <div className="smallScreen">
+      <div className="smallScreen"> 
         <button 
           className="btn smallScreen border border-primary "
           type="button"
@@ -31,6 +31,8 @@ function SideMenu({Films,People,Planets,Species,StarShips,Vehicles,isError}) {
           </div>
         </div>
       </div>
+
+
       <div className='fullscreen'>
     {
       Menu.map((items,index) => {

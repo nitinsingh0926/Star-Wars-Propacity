@@ -39,7 +39,7 @@ function SpeciesList() {
       ) : (
         <>
           <div className="spinner-border" role="status"></div>
-          <span> Loading...</span>
+          <span> Fetching Data From Star-war Api</span>
         </>
       )}
       <Instance myData={myData} isError={isError} />

@@ -78,7 +78,6 @@ function App() {
     getVehiclesApiData();
     },[]);
 
-  // <FilmsEpisode Films={Films} isError={isError} />
 
   return (
     <div className="App">

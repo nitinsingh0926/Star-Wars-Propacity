@@ -22,7 +22,7 @@ function People() {
     if(val == "grid"){
       navigate("/people")
     }else{
-      navigate("//PeopleListView")
+      navigate("/PeopleListView")
     }
   }
   
@@ -41,7 +41,6 @@ function People() {
 
   return (
     <>
-    {isError ? console.log("Error In Api Call") : ""}
       <Navbar name={"People"} handleNavigate={handleNavigate} />
       {myData[0] ? (
         "" //Loading animation for api

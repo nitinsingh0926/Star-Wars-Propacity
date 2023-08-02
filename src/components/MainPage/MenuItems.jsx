@@ -34,7 +34,7 @@ function MenuItems({ nameOfMenu,Films,People,Planets,Species,StarShips,Vehicles,
 </svg></span>)}
         </button>
         <ul className="dropdown-menu " aria-labelledby="dropdownMenuButton1">
-          {isError !== "" && console.log({isError})}
+          
           {Films[0] ? 
             "" //Loading animation for api
            : 

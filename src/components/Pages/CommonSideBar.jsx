@@ -10,7 +10,7 @@ export default function CommonSideBar({prop1,prop2,prop3,prop4,prop5,arrayIndex,
       >
         <div className="offcanvas-header">
           <h5 id="offcanvasRightLabel">{prop1}</h5>
-          <button
+          <button id="closeCanvas"
             type="button"
             className="btn-close text-reset"
             data-bs-dismiss="offcanvas"

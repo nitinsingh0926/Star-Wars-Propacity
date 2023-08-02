@@ -10,7 +10,7 @@ export default function SideBar({title,opening_crawl,director,release_date,produ
         <div className="offcanvas-header">
           <h5 id="offcanvasRightLabel">{title}</h5>
           <button
-            type="button"
+            type="button" id="closeCanvas"
             className="btn-close text-reset"
             data-bs-dismiss="offcanvas"
             aria-label="Close"

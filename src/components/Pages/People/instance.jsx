@@ -2,7 +2,6 @@ import DropdownList from "../Films/DropDown/Dropdown";
 function Instance({ myData ,isError}) {
   return (
     <>
-    {isError ? "" : "Error In Api Call"}
       <div className="list">
         <div className="tableHeading">
           <span>Name </span>

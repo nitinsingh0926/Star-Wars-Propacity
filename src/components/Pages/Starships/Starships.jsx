@@ -38,7 +38,7 @@ function Starships() {
       ) : (
         <>
           <div className="spinner-border" role="status"></div>
-          <span> Fetching Data From StarWar Api</span>
+          <span> Fetching Data From Star-war Api</span>
         </>
       )}
       <CommonContent isError={isError} myData={myData} index={3} prop1={"name"} prop2={"model"} prop3={"manufacturer"} prop4={"length"} prop5={"passengers"} prop1Val={"Name"}

@@ -42,7 +42,7 @@ function FilmsEpisode() {
         ) : (
           <>
             <div className="spinner-border" role="status"></div>
-            <span> Fetching Data From Api</span>
+            <span> Fetching Data From Star-war Api</span>
           </>
         )}
         <GridEpisode Films={Films} />

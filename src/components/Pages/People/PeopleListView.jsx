@@ -32,7 +32,7 @@ const handleNavigate = (val) => {
 
   return (
     <>
-    {isError ? console.log("Error In Api Call") : ""}
+    
       <Navbar name={"People"} handleNavigate={handleNavigate} />
       {myData[0] ? 
             "" //Loading animation for api
@@ -41,7 +41,7 @@ const handleNavigate = (val) => {
             <div className="spinner-border" role="status">
               
             </div>
-            <span > Loading...</span>
+            <span> Fetching Data From Star-war Api</span>
             </>
           }
       <Instance myData={myData} isError={isError}/>

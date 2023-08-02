@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './dropdown.css'
 function DropdownList({title}){
-
+console.log(title)
     return <>
           <div className="modal fade" id="exampleModal"  aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div className="modal-dialog">

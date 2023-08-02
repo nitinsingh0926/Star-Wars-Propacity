@@ -35,4 +35,13 @@ body{
     .SideMenuAndPageContent{
         display: block;
     }
+    #dashboardImage{
+        width: 150%;
+        margin-right: 150px;
+    }
+    .PageContent{
+        display: flex;
+        flex-direction: column;
+    }
+
   }

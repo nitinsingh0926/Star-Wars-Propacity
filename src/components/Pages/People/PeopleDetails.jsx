@@ -41,7 +41,7 @@ function People() {
 
   return (
     <>
-      <Navbar name={"People"} handleNavigate={handleNavigate} />
+      <Navbar name={"People"} handleNavigate={handleNavigate} state1={true}/>
       {myData[0] ? (
         "" //Loading animation for api
       ) : (

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./common.css";
-function Navbar({ name, handleNavigate }) {
-  const [state, setState] = useState(true);
+function Navbar({ name, handleNavigate,state1 }) {
+  const [state, setState] = useState(state1);
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light ">

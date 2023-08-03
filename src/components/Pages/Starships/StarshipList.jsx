@@ -34,7 +34,7 @@ function StarshipList() {
   return (
     <>
     {isError ? console.log("Error In Api Call") : ""}
-    <Navbar name={"Starships"} handleNavigate={handleNavigate} />
+    <Navbar name={"Starships"} handleNavigate={handleNavigate} state1={false}/>
       {myData[0] ? 
             "" //Loading animation for api
            : 

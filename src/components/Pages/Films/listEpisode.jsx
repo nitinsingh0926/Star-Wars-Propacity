@@ -30,7 +30,7 @@ function ListEpisode() {
   }, []);
   return (
     <div className="listAll">
-      <Navbar name={"Films"} handleNavigate={handleNavigate} />
+      <Navbar name={"Films"} handleNavigate={handleNavigate} state1={false}/>
       {isError !== "" && <h2>{isError}</h2>}
       <div className="list">
         {Films[0] ? ( //Loading animation for api

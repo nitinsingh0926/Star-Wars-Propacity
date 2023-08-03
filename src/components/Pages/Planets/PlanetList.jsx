@@ -33,7 +33,7 @@ const handleNavigate = (val) => {
   return (
     <>
       {isError ? console.log("Error In Api Call") : ""}
-      <Navbar name={"Planets"} handleNavigate={handleNavigate} />
+      <Navbar name={"Planets"} handleNavigate={handleNavigate} state1={false}/>
       {myData[0] ? 
             "" //Loading animation for api
            : 

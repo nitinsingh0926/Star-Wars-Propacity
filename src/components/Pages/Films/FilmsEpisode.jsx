@@ -34,7 +34,7 @@ function FilmsEpisode() {
 
   return (
     <>
-      <Navbar name={"Films"} handleNavigate={handleNavigate} />
+      <Navbar name={"Films"} handleNavigate={handleNavigate} state1={true}/>
       {isError !== "" && <h2>{isError}</h2>}
       <div className="film-grid">
         {Films[0] ? ( //Loading animation for api

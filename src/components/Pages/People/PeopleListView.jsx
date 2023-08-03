@@ -33,7 +33,7 @@ const handleNavigate = (val) => {
   return (
     <>
     
-      <Navbar name={"People"} handleNavigate={handleNavigate} />
+      <Navbar name={"People"} handleNavigate={handleNavigate} state1={false}/>
       {myData[0] ? 
             "" //Loading animation for api
            : 

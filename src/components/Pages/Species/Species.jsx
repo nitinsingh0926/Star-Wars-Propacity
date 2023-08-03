@@ -33,7 +33,7 @@ function Species() {
   return (
     <>
     {isError ? console.log("Error In Api Call") : ""}
-      <Navbar name={"Species"} handleNavigate={handleNavigate} />
+      <Navbar name={"Species"} handleNavigate={handleNavigate} state1={true}/>
       {myData[0] ? (
         "" //Loading animation for api
       ) : (
